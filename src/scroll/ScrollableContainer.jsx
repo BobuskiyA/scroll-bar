@@ -13,11 +13,6 @@ const ScrollableContainer = () => {
     container.style.transform = `translateX(${newPosition}px)`;
   };
 
-  const resetScrollPosition = () => {
-    setScrollPosition(0);
-    containerRef.current.style.transform = 'translateX(0)';
-  };
-
   const items = [
     {
       title: 'Phase 1',
@@ -50,7 +45,6 @@ const ScrollableContainer = () => {
             </div>
           ))}
         </div>
-        <button onClick={resetScrollPosition}>Скинути прокрутку</button>
       </div>
     </div>
   );
