@@ -25,6 +25,7 @@ h2,h3{
 }
 
 .item {
+   position: relative;
    display: flex;
    flex-direction: column;
    flex: 0 0 500px;
@@ -43,4 +44,11 @@ h2,h3{
 
 .item ul{
    margin: 0 0 46px 0;
+}
+
+item::after{
+   position: absolute;
+   width: 605px;
+   height: 364px;
+   background-image: 'url(./img/bamboo.png)';
 }
